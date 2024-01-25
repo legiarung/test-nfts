@@ -8,7 +8,7 @@ export const AppRoutes = () => {
         <>
             <ThirdwebProvider
                 activeChain={activeChain}
-                clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+                clientId={'452505a053210a1e5aab79b6a03ac164'}
             >
                 <ConnectRoutes />
             </ThirdwebProvider>

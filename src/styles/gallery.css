@@ -1,0 +1,175 @@
+.gallery__card__wrap {
+    box-shadow: 0 4px 16px 0 #000;
+    border-radius: 20px;
+    transition: box-shadow 0.2s ease;
+    overflow: hidden;
+    position: relative;
+}
+.gallery__card__wrap:hover {
+    box-shadow: 0 6px 20px 3px #bbc4ef 73;
+}
+.gallery__card__header {
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+}
+.gallery__card__header__top {
+    background-color: #add3ff;
+    height: 75px;
+    width: 100%;
+}
+.gallery__card__header__img {
+    background: #fff;
+    object-fit: cover;
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    z-index: 9999;
+    left: 0px;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.gallery__card__header__container {
+    height: 140px !important;
+    margin-top: 7px;
+    width: 140px !important;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    object-fit: cover;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.gallery__card__hr {
+    background: #dddbff;
+    border: none;
+    height: 2px;
+    margin: 0 auto;
+    max-width: 1120px;
+    width: 100%;
+}
+.gallery__card__instrument {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #3f4254;
+    background-color: #f5f8fa;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.gallery__card__content {
+    width: 100%;
+}
+.gallery__card__content__header {
+    overflow: hidden;
+    width: 100%;
+    padding: 0 1rem;
+    height: 140px;
+}
+.gallery__card__content__name {
+    text-align: center;
+    overflow-wrap: anywhere;
+    margin: 30px 0 0;
+    font-weight: 500;
+    height: 2.1rem;
+    color: #8076fa;
+}
+.gallery__card__content__name:hover {
+    color: #009ef7;
+}
+.gallery__card__content__price {
+    margin: 11px 0 5px;
+    color: #6873a4;
+    text-align: center;
+}
+.gallery__card__content__price:hover {
+    color: #009ef7;
+}
+.gallery__card__content__place {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: space-around;
+}
+.gallery__card__content__time {
+    align-items: center;
+    background-color: #f1f5fd;
+    border-radius: 8px;
+    color: #6873a4;
+    display: flex;
+    height: 1.8rem;
+    overflow: hidden;
+    padding: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.gallery__card__content__time:hover {
+    color: #009ef7;
+}
+.gallery__card__content__network {
+    align-items: center;
+    background-color: #f1f5fd;
+    border-radius: 8px;
+    color: #6873a4;
+    display: flex;
+    padding: 0 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.gallery__card__content__network:hover {
+    color: #009ef7;
+}
+.gallery__card__content__footer {
+    overflow: hidden;
+    width: 100%;
+    padding: 0 1rem;
+    height: 60px;
+    align-items: center;
+    color: #6873a4;
+    display: flex;
+    flex-direction: row;
+    height: 54px;
+}
+.gallery__card__content__footer:hover {
+    color: #009ef7;
+}
+.gallery__card__content__footer__place {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    text-align: center;
+    cursor: default;
+}
+.gallery__card__content__footer__title {
+    font-size: 1rem;
+    text-align: center;
+}
+.gallery__card__content__footer__content {
+    text-align: center;
+}
+.gallery__card__content__footer__holders {
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    cursor: pointer;
+}
+.gallery__search__input {
+    width: 49%;
+}
+.gallery__search__input-group {
+    display: flex;
+    justify-content: space-between;
+}

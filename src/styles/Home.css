@@ -1,0 +1,208 @@
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  padding: 4rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+  border-bottom: 2px solid #ddd;
+}
+
+.header-logo {
+  padding: 10px;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu-item {
+  padding: 10px;
+}
+
+.header-menu-item-a {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.active {
+  border: 1px solid #ddd;
+  background-color: rgb(136, 143, 137);
+}
+
+
+.marketplace_container {
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.marketplace_title {
+  margin: 20px 0 0;
+}
+
+.marketplace_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.marketplace_item {
+  display: block;
+  width: 25%;
+  padding: 10px;
+
+}
+
+.marketplace_item_img_wrap {
+  height: 200px;
+}
+
+.marketplace_item_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marketplace_item_title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.marketplace_item_info {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+
+}
+
+.marketplace_item_info_left {
+  width: 50%;
+}
+
+.marketplace_item_info_right {
+  width: 50%;
+
+}
+
+.marketplace_item_info_subtitle {
+  font-size: 14px;
+  color: #746c6c;
+}
+
+.marketplace_item_info_price {
+  color: #000;
+}
+
+.marketplace_item_info_time {
+  color: #000;
+}
+
+.marketplace_item_container {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 .1rem 1rem .25rem rgba(0, 0, 0, .05) !important;
+}
+
+.contract-header {
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 .1rem 1rem .25rem rgba(0, 0, 0, .05) !important;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.contract-header-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contract-header-address {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contract-header-sub {
+  font-size: 14px;
+  color: #746c6c;
+  font-weight: 400;
+}
+
+
+.nfts-container {
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.nfts-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.nfts-header-button-wrap {
+  display: flex;
+}
+
+.nfts-header-button {
+  margin: 0 5px;
+}
+
+.nfts-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nft-list {
+  display: flex;
+  width: 100%;
+}
+
+.nft-item-wrap {
+  padding: 10px;
+  width: 50%;
+}
+
+
+.nft-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.deploycontract_form {
+  width: 700px;
+}
+
+.deploycontract_row {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.deploycontract_left {
+  width: 30%;
+}
+
+.deploycontract_right {
+  width: 70%;
+}

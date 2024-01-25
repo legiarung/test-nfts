@@ -6,6 +6,7 @@ import { AppRoutes } from "./app/routing/AppRoutes";
 import { BrowserRouter } from "react-router-dom";
 import { PUBLIC_URL } from "./app/constants";
 import "./styles/Home.css";
+import "./assets/scss/index.scss";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.

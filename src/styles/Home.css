@@ -194,15 +194,19 @@
 }
 
 .deploycontract_row {
-  display: flex;
   width: 100%;
   margin: 20px 0;
 }
 
 .deploycontract_left {
-  width: 30%;
+  width: 100%;
 }
 
 .deploycontract_right {
-  width: 70%;
+  width: 100%;
+  display: flex;
+}
+
+.deploycontract_type {
+  margin: 0 0 0 10px;
 }

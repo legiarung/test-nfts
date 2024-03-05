@@ -4,6 +4,7 @@ import { ethers } from 'ethers';
 import { useFormik } from 'formik';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import * as Yup from 'yup'
 
 export const ClaimNfts = () => {
 
@@ -40,7 +41,8 @@ export const ClaimNfts = () => {
 
     }
 
-    const validationSchema = {}
+    const validationSchema = Yup.object().shape({
+    })
 
     const initialValues = {
 
@@ -49,9 +51,9 @@ export const ClaimNfts = () => {
     const formik = useFormik({
         initialValues: initialValues,
         validationSchema: validationSchema,
-        enableReinitialize: true,
         onSubmit: async (values, { setSubmitting }) => {
             setSubmitting(true)
+            console?.log('aaaaaa')
             try {
                 console?.log('claimNft', values)
                 await claimNft()
@@ -69,7 +71,7 @@ export const ClaimNfts = () => {
         <div className='claim_container'>
             <div className="claim_wrap">
                 <div className="claim_content">
-                    <form>
+                    <form onSubmit={formik.handleSubmit} noValidate>
                         {
                             <div className='claim_info'>
                                 <div className='claim_info_title'>{nft?.metadata?.name}</div>
@@ -80,18 +82,18 @@ export const ClaimNfts = () => {
                         <div className='claim_condition'>
                             Price: {activeClaimCondition?.currencyMetadata?.displayValue}  {activeClaimCondition?.currencyMetadata?.symbol}
                         </div>
-
-                        <Button variant="contained" type='submit'>
-
-                            <label >{(isLoading || loadingnft) ? 'Buying' : 'Buy'}</label>
-                            {(isLoading || loadingnft) &&
-                                <CircularProgress
-                                    color="secondary"
-                                    size={18}
-                                    variant="indeterminate"
-                                    sx={{ marginLeft: '10px' }}
-                                />}
-                        </Button>
+                        <div className='claim_condition'>
+                            <Button type='submit'>
+                                <label >{(isLoading || loadingnft) ? 'Buying' : 'Buy'}</label>
+                                {(isLoading || loadingnft) &&
+                                    <CircularProgress
+                                        color="secondary"
+                                        size={18}
+                                        variant="indeterminate"
+                                        sx={{ marginLeft: '10px' }}
+                                    />}
+                            </Button>
+                        </div>
                     </form>
                 </div>
 
